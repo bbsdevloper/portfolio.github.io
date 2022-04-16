@@ -614,6 +614,9 @@ footer div{
     padding: 0;
     height: 3vh;
 }
+.p-cont-child h1{
+    font-size: 1.1rem;
+}
 }
 #cursor{
     position: absolute;
