@@ -1,238 +1,584 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>MUKESH KUIRY</title>
-    </head>
-    <body>
-        <div id="loading" class="loading">
-                <div id="load" class="load-c">
-                    
-                     <div class="load-cc">
-                        <p>DON'T SHOCk 😉 MORE COMMING</p>
-                        <hr width="85%">
-                     </div>
-                     <div class="p-ccc">
-                        <div class="progress-value"></div>
-                     </div>
-                     <div class="p-cccc">
-                         <p>0%</p>
-                         <p>100%</p>
-                     </div>
-                     
-                    
-                </div>
-        </div>
-        <div id="home" class="container">
-           
-            <nav>
-                <img src="logo.png" alt=""> 
-                <ul id="navbar">
-                    <a href="#aboutpage">about</a>
-                    <a href="#workpage">work</a>
-                    <a href="#skillpage">skill</a>
-                    <a href="wait bro">contact</a>
-                </ul>
-                <ul id="menubtn">
-                    <a  id="menubtnr" href="#">☰</a>
-                </ul>
-            </nav>
-            <div class="hero">
-                <p>WELCOME TO</p>
-                <p>MY PORTFOLIO</p>
-                <h4>Myself Mukesh kuiry</h4>
-            </div>
-            
-            <div id="aboutpage" class="about">
-                <div class="left">
-                    <p>ABOUT ME</p>
-                    <h1>I AM A
-                    </h1>
-                    <h1>SOFTWEAR</h1>
-                    <h1> DEVLOPER</h1>
-                </div>
-                <div class="right">
-                    <p>
-                        My name is Mukesh Kuiry <i style="color:#00FA9A;"
-                            class="fa fa-certificate"></i>. I am currently
-                        pursuing B.TECH <i style="color: #00FA9A;" class="fa
-                            fa-graduation-cap"></i>
-                        form Haldia Institute of Technology ,
-                        Batch (2021-25) .
-                    </p>
-                    <p>
-                        For three years, the internet <i style="color: #00FA9A;"
-                            class="fa fa-globe"></i> has been my playground. I
-                        know its laws, its <i style="color: #00FA9A;" class="fa 
-                            fa-arrow-circle-up"></i> shortcuts, its complex
-                        jargon and its
-                        secret spots by heart. And for three years we've been
-                        living it up here, by your side.
-                    </p>
-                    <p>I am a devloper that designs and builds <i style="color:
-                            #00FA9A;" class="fa fa-heart"></i> web-based
-                        adventures.
-                    </p>
-                    <a href="#">Know <br>More <i style="color: #00FA9A;"
-                            class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    display: none;
+    animation: homeload 2s ;
+}
+@keyframes homeload {
+    0%{
+        opacity: 0;
+       
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes home-text {
+    0%{
+        transform: scale(2.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+body{
+    background-color: black;
+    width: 100vw;
+    max-width: 100vw;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.load-c{
+    height: 35vh;
+    width: 35vw;
+    border: 2px solid #00FA9A;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    /* align-items: center; */
+    text-align: center;
+    flex-direction: column;
+}
+.load-cc{
+    align-items: flex-start;
+    justify-content: start;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.load-cc hr{
+    margin-left: -0.6vw;
+}
+.progress-value {
+    animation: load 2s normal forwards;
+    justify-content: start;
+    background: #00FA9A;
+    height: 15px;
+    width: 0;
+   
+  }
+  .p-ccc{
+      border: 2px solid #00FA9A;
+      /* height: 15px; */
+      margin-top: 4vh;
+      width: 30vw;
+  }
+  .p-cccc{
+      display: flex;
+      justify-content: space-between;
+      margin: 2vh 1vw;
+  }
+  .load-c-a{
+      animation: stretch 2s ;
+  }
+  @keyframes stretch {
+    0% {
+        /* transform: scale(0.5); */
+        transform: scale3d(0.6);
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+      transform: scale(3.5);
+      
+    }
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 93%; }
+  }
+nav{
+    margin: 4vh;
+    display: flex;
+    width: 96%;
+    position: sticky;
+    top: 2vh;
+    justify-content: space-between;
+}
+nav img{
+    height: 2.5rem;
+    cursor: pointer;
+}
 
-            <div id="workpage" class="projects">
-                <p class="p12">WORK</p>
-                <div class="projects1">
-                    <div class="p-cont">
-                        <div class="p-cont-child">
-                            <h2>VISIT PURULIA </h2>
-                            <i id="arrow" class="fa fa-2x fa-arrow-right"></i>
-                        </div>
-                        <div class="abc">
-                            <a href="https://visitpurulia.blogspot.com/"> <img src="/purulia.png" alt=""></a>
-                           
-                        </div>
-                    </div>
-                    <div class="p-cont hey">
-                        <div class="p-cont-child">
-                            <h2>GUESS MY NUMBER GAME</h2>
-                            <i id="arrow1" class="fa fa-2x fa-arrow-right"></i>
-                        </div>
-                        <div class="abc">
-                            <a href="https://guessgamenew.blogspot.com/"><img src="/guess.png" alt=""></a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <p class="p12" style="text-align: center; font-size: 2vw;">MORE WORK COMMING SOON   ↓</p>
+ul{
+    display: flex;
+}
+nav a{
+    color: #00FA9A;
+    margin: 2vh 4vh;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+#menubtn{
+    display: none;
+    cursor: pointer;
+}
 
-            </div>
-            <hr>
-            <div id="skillpage" class="exp">
-                <div class="el">
-                        
-                        <p>C++</p>
-                        <div class="container2">
-                          <div class="skills cpp">90%</div>
-                        </div>
-                        
-                        <p>DSA</p>
-                        <div class="container2">
-                          <div class="skills dsa">60%</div>
-                        </div>
-                        
-                        <p>PROBLEM SOLVING</p>
-                        <div class="container2">
-                          <div class="skills prbm">65%</div>
-                        </div>
-                        
-                        <p>WEB DEVLOPEMENT</p>
-                        <div class="container2">
-                          <div class="skills web">70%</div>
-                        </div>
-                        <p>APP DEVLOPEMENT</p>
-                        <div class="container2">
-                          <div class="skills app">30%</div>
-                        </div>
-                        
-                </div>
-                <div class="er">
-                    
-                       <h1 class="et">SKILL</h1>
-                </div>
-            </div>
-            <hr>
-            <div class="menu">
-                <hr>
-                <div class="abou-menut ouch">
-                   <a href="">hire me</a>
-                </div>
-                <hr>
-                <hr>
-                <div class="work-menu ouch">
-                   <a href="">resume</a>
-                </div>
-                <hr>
-                <hr>
-                <div class="contact-menu ouch">
-                    <a href="mailto:mukeshkk3162@gmail.com? ">contact</a>
-                </div>
-                <hr>
-            </div>
-            <footer style="color: white;">
-                <div class="foot">
-                    <img style="height: 30vh;margin-right: 5vw;" src="logo.png" alt="">
-                    <div>
-                        <p>DROP ME A LINE </p>
-                        <p style="color: #00FA9A;">mukeshk3163@gmail.com</p>
-                        
-                    </div>
-                    <div>
-                        <p style="width: 9vw;">FOLLOW ME</p>
-                        <section style="display: flex; margin-left: -10px; ">
-                            <a href=""><i style="color: #00FA9A;"
-                                class="fa fa-2x smi fa-facebook"></i></a>
-                                <a href=""><i style="color: #00FA9A;"
-                                    class="fa fa-2x smi fa-instagram"></i></a>
-                                    <a href=""><i style="color: #00FA9A;"
-                                        class="fa fa-2x smi fa-linkedin"></i></a>
-                                    </section>
-                    </div>
-                    <div>
-                        <p>ADDRESS</p>
-                        <p style="color: #00FA9A;">Icare Complex, Hit Campus, P.O. Hatiberia, Kshudiram Nagar, Haldia, West Bengal 721657</p>
-                    </div>
-                </div>
-                <p style="text-align: center; margin-bottom: 5vh;"> © 2022 mukesh kuiry all right reserved </p>
-            </footer>
-<!-- 
-          <div id="cursor">
-              <img id="nopo" src="cursor.dedc4661.svg" alt="">
-               <img id="po" src="/cursor-pointer.c44632a8.svg" alt=""> -->
-          <!-- </div> --> 
-          <div class="cursor"></div>
+#menubtn a{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.hero{
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+ 
+}
+.hero p{
+    font-size: 10vw;
+    font-weight: 400;
+    background: -webkit-linear-gradient(0deg,yellow, #00FA9A,#00FA9A,#00FA9A,#00FA9A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1em;
+    animation: home-text 2s ;
+    animation-iteration-count: 1;
+    
+   
+}
+@keyframes floating{
+    0%{
+        transform: translate(0%,0%);
+    }
+    50%{
+        transform: translate(1%,1%);
+    }
+    0%{
+        transform: translate(0%,0%) ;
+    }
 
 
+}
+.hero h4{
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+}
+.hero:hover{
+    animation: floating ease  2s infinite ;
+}
+.about{
+    height: 100vh;
+    width: 90vw;
+    margin-left: 6vw;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left h1{
+    font-size: 9vw;
+    font-weight: 400;
+    color: #00FA9A;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1em;
+    
+}
+.right{
+    width: 40%;
+}
+.right p{
+    font-size: 1.2em;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    word-spacing: 0.2rem;
+   
+
+}
+.right a{
+    color: white;
+    cursor: pointer;
+ 
+}
+.projects{
+    width: 100vw;
+    height: 100vh;
+   
+
+
+}
+.projects1{
+   
+    display: flex;
+   
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+   
+}
+.p-cont{
+    width: 40vw;
+    margin: 15px;
+   height: fit-content;
+    border:2px solid #00FA9A;
+    overflow: hidden;
+    animation: floating2 ease  2s infinite ;
+   
+}
+.p-cont-child{
+    height: 8vh;
+    border:2px solid #00FA9A;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    overflow: hidden;
+   
+
+}
+.abc{overflow: hidden;}
+.p-cont img{
+   width: 100%;
+   height: 100%;
+   transition: transform 0.3s;
+   overflow: hidden;
+   cursor: pointer;
+   
+}
+.p-cont img:hover{
+   transform: scale(1.1);
+ }
+.p-cont-child h2{
+   color: white;
+   font-family: 'Quicksand', sans-serif;
+}
+#arrow{
+    font-size: 2rem;
+    color: #00FA9A;
+    border:2px solid #00FA9A;
+    padding: 5px;
+}
+.hey{
+    margin-top: -40px;
+    animation: floating3 ease  2s infinite ;
+
+}
+.p12{
+    color: white;
+    text-decoration: underline;
+    margin: 4vw 8vw;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.fa{
+    font-size: 20px;
+    cursor: pointer;
+}
+@keyframes floating2{
+    0%{
+        transform: translate(0%,0%);
+    }
+    50%{
+        transform: translate(2%,2%);
+    }
+    0%{
+        transform: translate(0%,0%) ;
+    }
+
+
+}
+@keyframes floating3{
+    0%{
+        transform: translate(0%,0%);
+    }
+    50%{
+        transform: translate(-2%,-2%);
+    }
+    0%{
+        transform: translate(0%,0%) ;
+    }
+
+
+}
+.ouch{
+    height: 30vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+   cursor: pointer;
+    align-items: center;
+    background-size: 1vw;
+    transition: background-size 0.8s;
+}
+.ouch a{
+    font-size: 7em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 5vw;
+}
+.ouch:hover{
+    background: linear-gradient(90deg,black,#00FA9A,yellow) no-repeat;
+    background-size: 100vw;
+    color: #00FA9A;
+    
+
+}
+.foot{
+    display: flex;
+    margin: 5vw;
+    justify-content: space-between;
+    
+}
+footer p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4vw;
+
+}
+footer div{
+    margin: 0vw 4vw;
+}
+.smi{
+    margin: 10px;
+    font-size: 25px;
+    
+}
 
 
 
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #00FA9A;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid #00FA9A;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid #00FA9A;
+}
+
+.exp{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 5vw;
+    color: #00FA9A;
+    font-family: 'Poppins', sans-serif;
+}
+.er{
+    transform: rotate(90deg);
+}
+.et{
+    font-size: 13vw;
+    font-family: 'poppins',sans-serif;
+}
+.el{
+   
+    flex-direction: column;
+}
+.el p{
+    color: white;
+    font-size: 1.3vw;
+    margin: 10PX 0px;
+
+   
+}
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    height: 2.5vw;
+  }
+  
+  .cpp {width: 50vw; background-color: #04AA6D;}
+  .dsa {width: 60%; background-color: #2196F3;}
+  .prbm {width: 65%; background-color: #f44336;}
+  .web {width: 70%; background-color: #808080;}
+  .app {width: 30%; background-color: yellow;}
 
 
+  .mm2{
+      height: 100vh;
+      width: 100vw;
+      max-width: 100vw;
+      max-height: 100vw;
 
-        </div>
-        
-        <div id="hmenu">
-            <div class="menu mm2">
-                <hr>
-                <div class="abou-menut qqq ouch">
-                   <a  id="aboutm"  href="#aboutpage">about</a>
-                </div>
-                <hr>
-                <hr>
-                <div class="work-menu qqq ouch">
-                    <a  id="workm" href="#workpage">work</a>
-                </div>
-                <hr>
-                <hr>
-                <div class="contact-menu qqq ouch">
-                    <a id="skillm"  href="#skillpage">skill</a>
-                </div>
-                <hr>
-                <div  class="contact-menu qqq ouch">
-                   <a id="contactm" href="">contact</a>
-                </div>
-                <hr>
-                <hr>
-                <div id="closem" class="contact-menu qqq ouch">
-                   <a>close</a>
-                </div>
-                <hr>
-            </div>
-        </div>
+  }
+  .qqq{
+      height: 20vh;
+  }
+  .qqq a{
+      font-size: 6vw;
+      height: 20vh;
+      width: 100vw;
+  }
+  #hmenu{
+      min-height: 100vh;
+      display: none;
+  }
 
-        <script src="script.js"></script>
-    </body>
-</html>
+  /* used media quary for responsive ness */
+
+  
+@media(max-width:720px){
+    .load-cc{
+        margin-left: 5px;
+        align-items: center;
+    }
+    #load{
+        width: 80vw;
+        height: 40vh;
+        padding: 25px;
+    }
+    .progress-value{
+        width: 80vw;
+    }
+    .p-ccc{
+        width: 65vw;
+    }
+    #navbar{
+       display: none;
+    }
+    #menubtn{
+        display: flex;
+        margin-top: 10;
+    }
+    .hero{
+        height: 80vh;
+    }
+    .hero p{
+        font-size: 3.8rem;
+        word-spacing: 50px;
+    }
+   .about{
+       flex-direction: column;
+       width: 100vw;
+   }
+   .left{
+       margin: 0;
+       width: 100vw;
+       height: max-content;
+   }
+   .left h1{
+       font-size: 3.6rem;
+   }
+   .right{
+       margin-left: -50px;
+   
+       width: 90vw;
+       padding: 0px 10px;
+   }
+   
+   .projects1{
+      
+       flex-direction: column;
+   }
+   .projects{
+       margin-left: 5vw;
+       height: 100vh;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+   }
+   .ouch a{
+       font-size: 5rem;
+   }
+   .p-cont{
+       margin: 5vw;
+       width: 80vw;
+   }
+   .foot{
+       flex-direction: column;
+   }
+   .foot img{
+       
+     
+       width: 50vw;
+   }
+   .foot p{
+       font-size: 20px;
+   }
+   footer div{
+       margin: 5vw;
+   }
+  
+}
+#cursor{
+    position: absolute;
+    /* top: -110px; */
+    /* bottom: -12120; */
+}
