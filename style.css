@@ -517,15 +517,18 @@ footer div{
         margin-top: 10;
     }
     .hero{
-        height: 70vh;
+        height: 90vh;
+        padding-bottom: 20vh;
     }
     .hero p{
         font-size: 3.8rem;
         word-spacing: 50px;
+      
     }
    .about{
        flex-direction: column;
        width: 100vw;
+       height: fit-content;
        padding: 15px;
        justify-content: center;
    }
@@ -545,8 +548,9 @@ footer div{
    }
    
    .projects1{
-      
+      margin: 0vw 5vh;
        flex-direction: column;
+       min-height: fit-content;
    }
    .projects{
       
@@ -577,10 +581,10 @@ footer div{
    }
    
 .exp{
-    height: auto;
     align-items: center;
     padding: 2vw 5vw;
     flex-direction: column-reverse;
+    height: fit-content;
 }
 .er{
     transform: rotate(0deg);
@@ -596,7 +600,6 @@ footer div{
     color: white;
     font-size: 1rem;
     margin: 10PX 0px;
-   
 }
 .p12{
     font-size: 5rem;
