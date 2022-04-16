@@ -1,7 +1,7 @@
 
 window.onscroll = function() {
-
-  if(window.pageYOffset < 200){
+if(screen.width>700){
+  if(window.pageYOffset < 10 ){
     document.getElementById("navbar").style.display = "flex";
     document.getElementById("menubtn").style.display = "none";
   }
@@ -9,6 +9,8 @@ window.onscroll = function() {
     document.getElementById("navbar").style.display = "none";
     document.getElementById("menubtn").style.display = "block";
   }
+}
+ 
  
 }
 window.addEventListener('load',function(){
@@ -55,18 +57,6 @@ function showmain2(){
 //   document.getElementById("cursor").style.left = '-1212px';
   
 // }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

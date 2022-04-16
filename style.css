@@ -513,11 +513,11 @@ footer div{
        display: none;
     }
     #menubtn{
-        display: flex;
+        display: none;
         margin-top: 10;
     }
     .hero{
-        height: 80vh;
+        height: 70vh;
     }
     .hero p{
         font-size: 3.8rem;
@@ -526,6 +526,8 @@ footer div{
    .about{
        flex-direction: column;
        width: 100vw;
+       padding: 15px;
+       justify-content: center;
    }
    .left{
        margin: 0;
@@ -547,7 +549,7 @@ footer div{
        flex-direction: column;
    }
    .projects{
-       margin-left: 5vw;
+      
        height: 100vh;
        align-items: center;
        display: flex;
@@ -565,8 +567,6 @@ footer div{
        flex-direction: column;
    }
    .foot img{
-       
-     
        width: 50vw;
    }
    .foot p{
@@ -575,7 +575,42 @@ footer div{
    footer div{
        margin: 5vw;
    }
-  
+   
+.exp{
+    height: auto;
+    align-items: center;
+    padding: 2vw 5vw;
+    flex-direction: column-reverse;
+}
+.er{
+    transform: rotate(0deg);
+}
+.et{
+    font-size: 6rem;
+    font-family: 'poppins',sans-serif;
+}
+.el{
+  padding-bottom: 10vh;
+}
+.el p{
+    color: white;
+    font-size: 1rem;
+    margin: 10PX 0px;
+   
+}
+.p12{
+    font-size: 5rem;
+    color: #00FA9A;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+}
+.cpp{
+    width: 80vw;
+}
+.skills{
+    padding: 0;
+    height: 3vh;
+}
 }
 #cursor{
     position: absolute;
