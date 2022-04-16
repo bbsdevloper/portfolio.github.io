@@ -618,6 +618,9 @@ footer div{
     font-size: 1.1rem;
 
 }
+.ouch{
+    height: 22vh;
+}
 }
 #cursor{
     position: absolute;
